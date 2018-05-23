@@ -1,0 +1,58 @@
+.content_list{
+    margin: 50px auto;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.block{
+    padding: 0;
+    width: 20%;
+    height: 120px;
+    margin: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.block:hover{
+    cursor: pointer;
+    animation: block_hover infinite 0.7s linear;
+}
+.block:active{
+    animation: block_active infinite 0.8s linear;
+}
+
+img{
+    width: 100%;
+    opacity: 0;
+}
+
+@keyframes block_hover {
+    0%{
+        background: #dfdfdf;
+    }
+    50%{
+        background: #a1a1a1;
+    }
+    100%{
+        background: #dfdfdf;
+    }
+}
+
+@keyframes block_active {
+    0%{
+        background: radial-gradient(white 5%, #3a3a3a);
+    }
+    25%{
+        background: radial-gradient(white 25%, #3a3a3a);
+    }
+    50%{
+        background: radial-gradient(white 50%, #3a3a3a);
+    }
+    75%{
+        background: radial-gradient(white 70%, #3a3a3a);
+    }
+    100%{
+        background: radial-gradient(white 95%, #3a3a3a);
+    }
+}
